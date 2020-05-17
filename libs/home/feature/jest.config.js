@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'frontend',
-  preset: '../../jest.config.js',
-  coverageDirectory: '../../coverage/apps/frontend',
+  name: 'home-feature',
+  preset: '../../../jest.config.js',
+  coverageDirectory: '../../../coverage/libs/home/feature',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

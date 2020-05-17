@@ -21,6 +21,9 @@
   "projects": {
     "frontend": {
       "tags": []
+    },
+    "home-feature": {
+      "tags": []
     }
   }
 }

@@ -91,8 +91,41 @@
           "options": {
             "jestConfig": "apps/frontend/jest.config.js",
             "tsConfig": "apps/frontend/tsconfig.spec.json",
-            "setupFile": "apps/frontend/src/test-setup.ts"
+            "setupFile": "apps/frontend/src/test-setup.ts",
+            "passWithNoTests": true
           }
+        }
+      }
+    },
+    "home-feature": {
+      "projectType": "library",
+      "root": "libs/home/feature",
+      "sourceRoot": "libs/home/feature/src",
+      "prefix": "agency-x",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/home/feature/tsconfig.lib.json",
+              "libs/home/feature/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/home/feature/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/home/feature/jest.config.js",
+            "tsConfig": "libs/home/feature/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/home/feature/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
         }
       }
     }
