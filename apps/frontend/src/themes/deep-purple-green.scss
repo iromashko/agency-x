@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+@import './app-theme.scss';
+@import '_base';
+@import '_typography';
+
+$frontend-primary: mat-palette($mat-deep-purple, 500, 200, 900);
+$frontend-accent: mat-palette($mat-green, 500, 200, 900);
+
+$frontend-theme: mat-light-theme($frontend-primary, $frontend-accent);
+
+@include angular-material-theme($frontend-theme);
+@include app-theme($frontend-theme);

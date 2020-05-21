@@ -2,6 +2,7 @@
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
 @import './themes/app-theme.scss';
+@import '_base';
 @import '_typography';
 // Plus imports for other components in your app.
 // Include the common styles for Angular Material. We include this here so that you only
@@ -37,8 +38,3 @@ $frontend-theme: mat-dark-theme(
 @include app-theme($frontend-theme);
 
 /* You can add global styles to this file, and also import other style files */
-@import '_base';
-
-body {
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-}
