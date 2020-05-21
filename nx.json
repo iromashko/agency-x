@@ -24,6 +24,12 @@
     },
     "home-feature": {
       "tags": []
+    },
+    "theme-picker": {
+      "tags": []
+    },
+    "angular-material": {
+      "tags": []
     }
   }
 }
