@@ -6,8 +6,17 @@
   <mat-icon>format_paint</mat-icon>
 </button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item *ngFor="let theme of themes">
-    <mat-icon>dialpad</mat-icon>
-    <span>{{ theme.id }}</span>
-  </button>
+  <mat-grid-list cols="2">
+    <mat-grid-tile *ngFor="let theme of themes">
+      <button
+        mat-mini-fab
+        [style.backgroundColor]="theme.primary"
+        (click)="changeTheme(theme)"
+      >
+        <mat-icon *ngIf="theme === selectedTheme" [style.color]="theme.accent"
+          >check</mat-icon
+        >
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
 </mat-menu>

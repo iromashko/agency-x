@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EnvService } from '@agency-x/config/frontend';
 import { ITheme } from '@agency-x/shared/shared';
+import { StyleManagerService } from '../style-manager.service';
 
 @Component({
   selector: 'agency-x-theme-picker',
@@ -9,9 +10,18 @@ import { ITheme } from '@agency-x/shared/shared';
 })
 export class ThemePickerComponent implements OnInit {
   public themes: ITheme[];
+  public selectedTheme: ITheme;
 
-  constructor(env: EnvService) {
+  constructor(env: EnvService, private styleManager: StyleManagerService) {
     this.themes = env.themes;
+
+    this.selectedTheme = this.themes.find((t) => t.isDefault);
+  }
+
+  changeTheme(theme: ITheme): void {
+    this.selectedTheme = theme;
+
+    this.styleManager.changeTheme(theme);
   }
 
   ngOnInit(): void {}
