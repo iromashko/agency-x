@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2"
+  xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="applicationName" datatype="html">
+        <source>
+      Agency X
+    </source>
+        <target>Агентство Х</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../../libs/home/feature/src/lib/containers/landing/landing.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">application name</note>
+      </trans-unit>
+      <trans-unit id="signupParagraph" datatype="html">
+        <source>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, error ab,
+      doloremque possimus, magnam optio eaque ad perferendis laborum dolores
+      quaerat ullam suscipit ipsum inventore laudantium sapiente harum
+      praesentium impedit!
+    </source>
+        <target>
+
+      В профессиональной сфере часто случается так, что личные или корпоративные клиенты заказывают, чтобы публикация была сделана и представлена еще тогда, когда фактическое содержание все еще не готово. Вспомните новостные блоги, где информация публикуется каждый час в живом порядке. Тем не менее, читатели склонны к тому, чтобы быть отвлеченными доступным контентом, скажем, любым текстом, который был скопирован из газеты или интернета. Они предпочитают сконцентрироваться на тексте, пренебрегая разметкой и ее элементами. К тому же, случайный текст подвергается риску быть неумышленно смешным или оскорбительным, что является неприемлемым риском в корпоративной среде. Lorem ipsum, а также ее многие варианты были использованы в работе начиная с 1960-ых, и очень даже похоже, что еще с 16-го века.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../../libs/home/feature/src/lib/containers/landing/landing.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">signup paragraph</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

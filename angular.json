@@ -83,6 +83,20 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "en": {
+              "aot": true,
+              "outputPath": "dist/frontend-en",
+              "i18nFile": "apps/frontend/src/i18n/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en"
+            },
+            "ru": {
+              "aot": true,
+              "outputPath": "dist/frontend-ru",
+              "i18nFile": "apps/frontend/src/i18n/messages.ru.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ru"
             }
           }
         },
@@ -94,6 +108,12 @@
           "configurations": {
             "production": {
               "browserTarget": "frontend:build:production"
+            },
+            "en": {
+              "browserTarget": "frontend:build:en"
+            },
+            "ru": {
+              "browserTarget": "frontend:build:ru"
             }
           }
         },
