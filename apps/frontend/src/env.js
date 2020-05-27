@@ -34,8 +34,21 @@
     },
   ];
 
+  const languages = [
+    {
+      name: 'English',
+      href: 'http://localhost:4200',
+      isDefault: true,
+    },
+    {
+      name: 'Russian',
+      href: 'http://localhost:4300',
+    },
+  ];
+
   window.__env = {
     debugMode: true,
     themes,
+    languages,
   };
 })(this);
